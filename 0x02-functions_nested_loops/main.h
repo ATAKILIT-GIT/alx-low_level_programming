@@ -15,23 +15,3 @@ int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
 #endif
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-main.h [unix] (13:30 13/04/2022)                                         0,1 All
--- INSERT --
-
