@@ -1,0 +1,1 @@
+pointer readme and array
