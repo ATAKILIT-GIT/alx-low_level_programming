@@ -25,6 +25,6 @@ char *_strchr(char *s, char c)
 		}
 	}
 
-OAOAOA	return ('\0');
-OAOAOA}
+	return ('\0');
+}
 
