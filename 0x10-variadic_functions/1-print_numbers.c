@@ -1,20 +1,28 @@
-#include "function_pointers.h"
-#include <stdlib.h>
+#include "variadic_functions.h"
 /**
- * array_iterator - iterates an array
- * @array: is an array
- * @size: is the size
- * @action: is something
+ * print_numbers - print all the parametes.
+(* a blank line
+ *@separator: the number of parameters
+ *@n: the number of parameters
+* Description: this function prints all the parameters)?
+(* section header: the header of this function is variadic_functions.h)*
+* Return: no retunr.
 */
-void array_iterator(int *array, size_t size, void (*action)(int))
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
+	va_list num;
 	unsigned int i;
 
-	if (array == NULL)
-		return;
-	if (action == NULL)
-		return;
+	i = 0;
 
-	for (i = 0; i < size; i++)
-		action(array[i]);
+	va_start(num, n);
+	while (i < n)
+	{
+		printf("%d", va_arg(num, unsigned int));
+		if (i < (n - 1) && separator != NULL)
+			printf("%s", separator);
+		i++;
+	}
+	va_end(num);
+	printf("\n");
 }
